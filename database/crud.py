@@ -10,6 +10,8 @@ class CRUD(CRUDHelper):
         selected = self._read(obj.key, u_names, u_values)
         if selected:
             self.set_obj(obj, selected)
+            return True
+        return False
 
     def update(self, obj):
         self._update(

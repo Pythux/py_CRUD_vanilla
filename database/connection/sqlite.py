@@ -15,6 +15,6 @@ def sql_sqlite(db_path, req, *params):
             str(e) +
             '\nreq = “{}”\nparams = “{}”'.format(req, params))
 
-    exception = sqlite3.ProgrammingError
+    exception = sqlite3.ProgrammingError, sqlite3.InterfaceError
     return sql_helper(
         connect, exception, exception_handling, req, *params)

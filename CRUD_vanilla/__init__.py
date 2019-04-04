@@ -3,4 +3,4 @@ from .crud import CRUD
 from .interface import InterfaceCRUD
 from .database import DataBase
 
-import database.connection as connection
+import CRUD_vanilla.connection as connection

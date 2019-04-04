@@ -1,6 +1,6 @@
 
 from abc import ABCMeta, abstractmethod
-from database import CRUD
+from CRUD_vanilla import CRUD
 
 
 class InterfaceCRUD(CRUD, metaclass=ABCMeta):

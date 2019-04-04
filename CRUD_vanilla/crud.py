@@ -1,4 +1,4 @@
-from database import CRUDHelper
+from CRUD_vanilla import CRUDHelper
 
 
 class CRUD(CRUDHelper):
